@@ -7,7 +7,7 @@ export default function Page() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prevCounter) => {
-        if (prevCounter === 6) {
+        if (prevCounter === 3) {
           clearInterval(interval); // Clear the interval before throwing the error
           throw new Error("Intentional error caused after few sec!");
         }
@@ -31,8 +31,8 @@ export default function Page() {
         <div>
           <h1>Counter: {counter}</h1>
           <p>
-            This page will throw an error after 6 seconds (When counter reaches
-            6) .
+            This page will throw an error after 3 seconds (When counter reaches
+            3) .
           </p>
         </div>
       </Box>

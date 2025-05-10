@@ -7,7 +7,7 @@ export default function AboutPage() {
   const navigate = useNavigate();
 
   const handleGoBack = () => {
-    navigate("/");
+    navigate("./..");
   };
 
   return (
@@ -90,7 +90,7 @@ export default function AboutPage() {
             color="textPrimary"
             gutterBottom
           >
-            Misc
+            Version
           </Typography>
           <Typography variant="body2" color="textSecondary">
             Version: {versionString}

@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "copy-index-to-404": "cp ../pages/index.html ../pages/404.html",
-    "dev-gh": "vite --base=/firebase-auth-safe-ui/",
+    "dev-gh": "vite --base=/firebase-auth-safe-ui/ --host 0.0.0.0",
     "build-gh": "vite build --emptyOutDir --base=/firebase-auth-safe-ui/ && npm run copy-index-to-404"
   },
   "dependencies": {

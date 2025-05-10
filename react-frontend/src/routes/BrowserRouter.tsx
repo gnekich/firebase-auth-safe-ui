@@ -8,6 +8,8 @@ import ErrorDemoPage from "@/routes/ErrorDemoPage";
 import NotFoundPage from "@/routes/NotFoundPage";
 import LoadingSuspenseComponent from "@/components/Suspense/LoadingSuspenseComponentSimple";
 
+console.log(`BASE_URL: ${import.meta.env.BASE_URL}`);
+
 const router = createBrowserRouter([
   {
     path: `${import.meta.env.BASE_URL}/`,
@@ -15,21 +17,21 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: `${import.meta.env.BASE_URL}/about`,
+    path: `${import.meta.env.BASE_URL}about`,
     element: <AboutPage />,
     errorElement: <ErrorPage />,
   },
 
   // Action
   {
-    path: `${import.meta.env.BASE_URL}/:firebaseProjectId/action/`,
+    path: `${import.meta.env.BASE_URL}:firebaseProjectId/action/`,
     element: <RootPage />,
     errorElement: <ErrorPage />,
   },
 
   // Debug
   {
-    path: `${import.meta.env.BASE_URL}/debug/404`,
+    path: `${import.meta.env.BASE_URL}debug/404`,
     element: <NotFoundPage />,
     errorElement: <ErrorPage />,
   },
@@ -43,12 +45,19 @@ const router = createBrowserRouter([
     element: <ErrorDemoPage />,
     errorElement: <ErrorPage />,
   },
+
+  // Catch all
+  {
+    path: `${import.meta.env.BASE_URL}*`,
+    element: <NotFoundPage />,
+    errorElement: <ErrorPage />,
+  },
 ]);
 
 function BrowserRouter() {
   return (
     <RouterProvider
-      //fallbackElement={NotFound}
+      // fallbackElement={NotFoundPage}
       router={router}
     />
   );
