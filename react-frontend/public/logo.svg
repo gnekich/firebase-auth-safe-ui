@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Firebase Flame -->
+  <path fill="#FFCA28" d="M96.5 8.5L128 96l-31.5 31.5L96.5 8.5z"/>
+  <path fill="#FFA000" d="M128 96l31.5-87.5L128 96z"/>
+  <path fill="#F57C00" d="M96.5 127.5L128 96l31.5 31.5L128 224l-31.5-96.5z"/>
+  <path fill="#FFCA28" d="M128 224l31.5-96.5L128 224z"/>
+  
+  <!-- Lock Symbol -->
+  <rect x="80" y="140" width="96" height="80" rx="8" fill="#1976D2"/>
+  <rect x="104" y="120" width="48" height="40" rx="8" fill="#42A5F5"/>
+  <circle cx="128" cy="180" r="12" fill="#BBDEFB"/>
+</svg>

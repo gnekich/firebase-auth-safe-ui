@@ -1,0 +1,10 @@
+node_modules/
+
+.data/
+./pages/
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
